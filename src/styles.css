@@ -1,0 +1,79 @@
+:root{
+    --primary-color: #6c63ff;
+    --secondary-color: #f5f2fe;
+    --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+body{
+    box-sizing: border-box;
+    background: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+h2{margin-top: 100px;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 48px;
+}
+h1{
+    font-size: 96px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.details h3{
+    font-size: 24px;
+    opacity: 0.7;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.links{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.links a {
+    margin: 20px;
+}
+.primary-links {
+    border-radius: 4px;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    background: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    color: white;
+}
+.primary-links:hover{
+    color: #ffffff98;
+    transform: translateY(-10px);
+}
+.primary-link-2{
+    border-radius: 4px;
+    padding: 20px 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+.primary-link-2:hover{
+    transform: translateY(-10px);
+}
+.business{
+    max-width: 100%;
+    vertical-align: middle;
+    overflow-y: hidden;
+}
+@media (max-width:776px) {
+    .weather{
+        margin-top: 30px;
+    }
+}
+@media (max-width:430px) {
+    h1{font-size: 70px;
+        text-align: center;
+        margin-left: 30px;
+    }
+    .details h3{
+        padding: 10px;
+    }
+}

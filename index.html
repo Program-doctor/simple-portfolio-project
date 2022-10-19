@@ -5,51 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Simple Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
-    <nav>
-        <h3><a href="index.html">Promise Sylvester</a></h3>
-        <button></button>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About me</a></li>
-            <li><a href="about.html#contact">Contact me</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Promise Sylvester</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html#contact">Contact me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <div class="details">
-        <h2>👋 Hi I am</h2>
-        <h1>Promise Sylvester</h1>
-        <p>🇳🇬 Front-end developer, based in Nigeria</p>
+        <h2 class="text-center">👋 Hi I am</h2>
+        <h1 class="text-center">Promise Sylvester</h1>
+        <h3 class="text-center">🇳🇬 Front-end developer, based in Nigeria</h3>
     </div>
     <div class="links">
-        <li><a href="about.html#contact">Contact me</a></li>
-        <li><a href="about.html">About me</a></li>
+    <a href="about.html#contact" class="primary-links">Contact me</a>
+    <a href="about.html" class="primary-link-2">About me</a>
     </div>
     <main>
         <div class="container">
-            <img src="" alt="">
-            <div class="desc">
-            <h3>Business app</h3>
-            <p>This website tells more about the services I render for my cleaning business and how to contact me if interested in the services I render.</p>
-            <a href="#">Launch Business App</a>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <img src="/img/business.png" alt="" class="business rounded">
+                </div>
+                <div class="desc col-md-6">
+                    <h3>Business app</h3>
+                    <p class="mb-5">This website tells more about the services I render for my cleaning business and how to contact me if interested in the services I render.</p>
+                    <a href="#" class="primary-links">Launch Business App</a>
+                </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="desc">
+        <div class="row mt-5">
+            <div class="desc col-md-6">
                 <h3>Weather app</h3>
-                <p>This app was created by me to tell the weather forecast of a current location or even any other locationn a user searches for.</p>
-                <a href="#">Launch Weather App</a>
+                <p class="mb-5">This app was created by me to tell the weather forecast of a current location or even any other locationn a user searches for.</p>
+                <a href="#" class="primary-links">Launch Weather App</a>
             </div>
-            <img src="" alt="">
+            <div class="col-md-6">
+                <img src="/img/weather.png" alt="" class="business rounded weather">
+            </div>
         </div>
-        <div class="container">
-            <img src="" alt="">
-            <div class="desc">
+        <div class="row mt-5">
+            <div class="col-md-6">
+                <img src="" alt="">
+            </div>
+            <div class="desc col-md-6">
             <h3>Landing page</h3>
-            <p>I created this a responsive landing page for my cleaning business which has every necessary details of the business</p>
-            <a href="#">Launch Landing Page</a>
-            </div>
+            <p class="mb-5">I created this a responsive landing page for my cleaning business which has every necessary details of the business</p>
+            <a href="#" class="primary-links">Launch Landing Page</a>
         </div>
+    </div>
+    </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
